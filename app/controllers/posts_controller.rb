@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 	end 
 
 	def new 
+		@post = Post.new 
 	end 
 
 	# to save our post... we have make a post 
@@ -14,7 +15,7 @@ class PostsController < ApplicationController
 			redirect_to @post
 		else 
 			@errors = @post.errors.full_messages 
-			render 'posts/new'
+			render 'new'
 		end 	
 	end 
 
