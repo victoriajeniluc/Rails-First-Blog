@@ -80,13 +80,22 @@ a {
 	}
 }
 
+
+#new-comment-form > textarea {
+	height: 100px;
+}
+
+#comments {
+	padding-top: 5px;
+}
+
 #new-post-form, #edit-post-form {
 	text-align: center; 
 	padding-top: 2%;
 }
 
 .show-content {
-	text-align:center;
+	text-align: center;
 }
 
 #errors > ul {
@@ -101,7 +110,7 @@ input[type=text], textarea {
 	background-color: white;
 }
 
-textarea {
+#new-post-form > textarea, #edit-post-form > textarea {
 	height: 250px;
 }
 
