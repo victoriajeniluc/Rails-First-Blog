@@ -37,7 +37,8 @@ a {
 	bottom: 10px;
 	top: 10px;
 	height: 200%;
-	background-image: image-url("background.jpg");
+	background-image: url("background.jpg");
+	background-repeat: repeat-y;
 	padding: 7em 0 0 0;
 	border-right: 1px solid black;
 	ul {
@@ -81,8 +82,10 @@ a {
 
 #new-post-form {
 	text-align: center; 
-	margin-left: 15%
+	margin-left: 15%; 
+	padding-top: 2%;
 }
+
 
 input[type=text], textarea {
 	color: 	black;
@@ -98,7 +101,7 @@ textarea {
 
 input[type=submit] {
 	color: 	#484848;
-	border: 1px solid black;
+	border: 1px solid #d6dce0;
 	padding: .5em .5em;
 	border-radius: 1.0em;
 	background-color: white;
@@ -106,6 +109,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	color: pink;
+	border: 1px solid black;
 }
 
 .button {
