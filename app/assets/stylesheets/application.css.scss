@@ -80,7 +80,7 @@ a {
 	}
 }
 
-#new-post-form {
+#new-post-form, #edit-post-form {
 	text-align: center; 
 	padding-top: 2%;
 }
@@ -140,6 +140,14 @@ input[type=submit]:hover {
    display: block;
    height: 0;
    clear: both;
+}
+
+.edit-link, .delete-link {
+	display: inline-block;
+}
+
+.edit-link:hover, .delete-link:hover { 
+	color: pink;
 }
 
 #main_content {
