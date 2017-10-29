@@ -19,14 +19,15 @@
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 }
-
+body { 
+	font-family: "Andale Mono", AndaleMono, monospace;
+}
 a {
 	text-decoration: none;
 	color: inherit;
 }
 
 #sidebar {
-	font-family: "Andale Mono", AndaleMono, monospace;
 	font-size: 30px;
   color: 	#484848;
 	width: 250px;
@@ -58,7 +59,7 @@ a {
 					color: 	#FFB6C1;
 					border: 1px solid black;
 					padding: .5em .5em;
-					border-radius: 1.5em;
+					border-radius: 1.0em;
 					background-color: white;
 				}
 			}
@@ -78,7 +79,34 @@ a {
 	}
 }
 
+#new-post-form {
+	text-align: center; 
+	margin-left: 15%
+}
 
+input[type=text], textarea {
+	color: 	black;
+	border: 1px solid black;
+	padding: .5em .5em;
+	border-radius: 1.0em;
+	background-color: white;
+}
+
+textarea {
+	height: 250px;
+}
+
+input[type=submit] {
+	color: 	#484848;
+	border: 1px solid black;
+	padding: .5em .5em;
+	border-radius: 1.0em;
+	background-color: white;
+}
+
+input[type=submit]:hover {
+	color: pink;
+}
 
 .button {
 	outline: none;
