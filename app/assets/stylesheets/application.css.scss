@@ -82,10 +82,12 @@ a {
 
 #new-post-form {
 	text-align: center; 
-	margin-left: 15%; 
 	padding-top: 2%;
 }
 
+.show-content {
+	text-align:center;
+}
 
 input[type=text], textarea {
 	color: 	black;
@@ -163,16 +165,16 @@ input[type=submit]:hover {
 	}
 	.post_wrapper {
 		padding: 3em;
-		border-bottom: 1px solid #d6dce0;
+		border-bottom: 1px solid black;
 		.title {
 			margin: 0;
 			a {
 				font-weight: 500;
 				text-decoration: none;
-				color: #2a2f35;
+				color: #484848;
 				font-size: 1.5em;
 				&:hover {
-					color: #33acb7;
+					color: pink;
 				}
 			}
 		}
@@ -261,7 +263,7 @@ input[type=submit]:hover {
 				line-height: 1.75;
 			}
 			a {
-				color: #33acb7;
+				color: pink;
 				font-weight: 700;
 				text-decoration: none;
 			}
@@ -270,7 +272,7 @@ input[type=submit]:hover {
 	.links {
 		margin: 2em 0;
 	}
-	input[type="text"], input[type="email"], input[type="password"], textarea {
+	input[type="email"], input[type="password"]{
 		width: 90%;
 		border: 1px solid #d6dce0;
 		border-radius: .35em;
@@ -278,23 +280,5 @@ input[type=submit]:hover {
 		padding: .5em 1em;
 		line-height: 1.75;
 	}
-	input[type="text"] {
-		height: 35px;
-	}
-	textarea {
-		min-height: 180px;
-	}
-	input[type="submit"] {
-		outline: none;
-		background: transparent;
-		border: 1px solid #d6dce0;
-		padding: .5em 1.5em;
-		font-size: 1.1em;
-		border-radius: 1.5em;
-		margin-left: .5em;
-		&:hover {
-			border: 1px solid #33acb7;
-			color: #33acb7;
-		}
-	}
+	
 }
