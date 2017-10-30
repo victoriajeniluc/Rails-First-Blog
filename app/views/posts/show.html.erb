@@ -3,6 +3,8 @@
 		<%= @post.title %> 
 	</h1>
 
+	<p>By:<%= @post.user.name %> </p>
+
 	<p class="edit-link"><%= link_to 'edit', edit_post_path(@post) %></p> | <p class="delete-link"><%= link_to 'destroy', post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete it?" } %></p>
 	
 	<p class="date">

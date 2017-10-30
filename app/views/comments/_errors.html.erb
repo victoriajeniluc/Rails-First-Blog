@@ -1,0 +1,11 @@
+<% if @errors %> 
+	<div id="errors">
+		<ul>
+			<!-- pluralize does is... anything past the count of 1, it will automatically pluralize the word for us.-->
+			<h3><%= pluralize(@errors.count, "error") %> prevented this post from saving!</h3>
+			<% @errors.each do |error| %> 
+				<li><%= error %></li>
+			<% end %> 
+		</ul>
+	</div>	 
+<% end %>

@@ -89,7 +89,7 @@ a {
 	padding-top: 5px;
 }
 
-#new-post-form, #edit-post-form {
+#new-post-form, #edit-post-form, #loginform, #registerform {
 	text-align: center; 
 	padding-top: 2%;
 }
@@ -161,7 +161,7 @@ input[type=submit]:hover {
 
 #main_content {
 	margin-left: 250px;
-	margin-top: -640px;
+	margin-top: -600px;
 	#header {
 		font-family: "Andale Mono", AndaleMono, monospace;
   	color: #484848;

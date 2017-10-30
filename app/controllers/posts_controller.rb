@@ -1,4 +1,7 @@
 class PostsController < ApplicationController 
+
+	before_action :authorize 
+	
 	def index 
 		@posts = Post.all.order('created_at DESC') 
 	end 
@@ -10,7 +13,7 @@ class PostsController < ApplicationController
 	# to save our post... we have make a post 
 	def create 
 		@post = Post.new(post_params)
-		
+		@post.user_id = current_user.id 
 		if @post.save 
 			redirect_to @post
 		else 

@@ -14,7 +14,6 @@
   		<ul>
   			<li class="category">Website</li>
   			<li><%= link_to "Blog", root_path %></li>
-  			<li>About</li>
   		</ul>	
 
   		<ul>
@@ -23,7 +22,6 @@
   			<li><a href="https://github.com/victoriajeniluc">Github</li>
   			<li><a href="mailto:victoriajeniluc@gmail.com">E-Mail</a></li>
   		</ul>
-  		<p class="sign_in">Admin Login</p>
   	</div>
 
   	<div id="main_content">
@@ -31,8 +29,11 @@
   			<p>All Posts</p>
 
   			<div class="buttons">
-  				<button class="button"><%= link_to "New Post", new_post_path %></button>
-  				<button class="button">Log Out</button>
+  				<% if current_user %> 
+            <%= current_user.name %> | <button class="button"><%= link_to "New Post", new_post_path %></button> | <%= link_to "Logout", '/logout' %>
+          <% else %> 
+            <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+          <% end %>
   			</div>
   		</div>
 
